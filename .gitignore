@@ -1,0 +1,26 @@
+### Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+### Test binary, built with `go test -c`
+*.test
+
+### Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+### IntelliJ IDEA ###
+http-client.private.env.json
+.idea
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+.vscode/
+
+### Mac ###
+.DS_Store
+

@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+
+  api:
+    image: ltc/ltc-homework-api_app
+    networks:
+      - ltc
+    ports:
+      - 8080:8080
+    depends_on:
+      - database
+
+  database:
+    image: mysql:8.0.23
+    networks:
+      - ltc
+    ports:
+      - 3306:3306
+    environment:
+      TZ: "UTC"
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ltc
+      MYSQL_USER: ltc_u
+      MYSQL_PASSWORD: ltc_p
+
+networks:
+  ltc:

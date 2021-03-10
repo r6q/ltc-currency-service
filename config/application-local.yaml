@@ -1,0 +1,6 @@
+database:
+  connectionUrl: ltc_u:ltc_p@tcp(localhost:3306)/ltc?charset=utf8&parseTime=True&loc=UTC
+
+rss:
+  requestTimeout: 10s
+  url: https://www.bank.lv/vk/ecb_rss.xml
